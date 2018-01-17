@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/txtMes"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Jan 2017" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llValur1Root"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearDespesa"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtValorDespesa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="right|center"
+                    android:maxLines="1"
+                    android:text="R$ 150,00" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearDespesaMargin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@android:color/transparent"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llValur2Root"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearReceita"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_weight="8"
+                android:background="@android:color/holo_green_light"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtValorReceita"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="right|center"
+                    android:maxLines="1"
+                    android:text="R$ 150,00" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearReceitaMargin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@android:color/transparent"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
