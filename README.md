@@ -90,6 +90,19 @@ items.add(new BarItem("ABC", 250d, Color.RED, Color.WHITE));
 //				          first bar color, second bar color, first text color, second text color
 items.add(new BarItem("Teste " + i, 800d, 600d, Color.RED, Color.GREEN, Color.WHITE, Color.WHITE));
 ```
+
+4) Remove itens
+
+```java
+horizontal.removeOne(position);
+```
+
+or
+
+```java
+horizontal.removeAll();
+```
+
 <br/>
 
 MIT License
