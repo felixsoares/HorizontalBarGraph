@@ -1,1 +1,1 @@
-# HorizontalBarGraph
+# Horizontal Bar Graph
