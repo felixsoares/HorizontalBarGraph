@@ -4,6 +4,8 @@
 
 Android graph view library
 
+![](https://image.ibb.co/fKvUhR/img1.gif)
+
 ### Getting Started
 
 Add it in your root build.gradle (Project module)
