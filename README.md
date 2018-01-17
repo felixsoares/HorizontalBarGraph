@@ -2,6 +2,8 @@
 
 # Horizontal Bar Graph
 
+Android graph view library
+
 ### Getting Started
 
 Add it in your root build.gradle (Project module)
