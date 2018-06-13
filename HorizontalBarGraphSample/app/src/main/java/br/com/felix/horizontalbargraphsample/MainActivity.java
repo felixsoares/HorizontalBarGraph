@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import br.com.felix.horizontalbargraph.HorizontalBar;
 import br.com.felix.horizontalbargraph.model.BarItem;

@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.List;
+import java.util.Locale;
 
 import br.com.felix.horizontalbargraph.R;
 import br.com.felix.horizontalbargraph.interfaces.OnItemClickListener;
@@ -23,10 +24,12 @@ public class BarItemRecycleViewAdapter extends RecyclerView.Adapter<BarItemRecyc
     private Double biggerValue = 0.0;
     private List<BarItem> items;
     private OnItemClickListener listener;
+    private Locale locale;
 
-    public BarItemRecycleViewAdapter(List<BarItem> items, OnItemClickListener listener) {
+    public BarItemRecycleViewAdapter(List<BarItem> items, OnItemClickListener listener, Locale locale) {
         this.items = items;
         this.listener = listener;
+        this.locale = locale;
         getBiggerValue(items);
     }
 
@@ -53,7 +56,7 @@ public class BarItemRecycleViewAdapter extends RecyclerView.Adapter<BarItemRecyc
         BarItem viewModel = getItem(position);
         holder.txtDesciption.setText(viewModel.getDescription());
 
-        holder.txtValue1.setText(Util.formatMoney(viewModel.getValue1()));
+        holder.txtValue1.setText(Util.formatMoney(viewModel.getValue1(), locale));
         chanceViewParam(holder.txtValue1, viewModel.getTextColorBar1());
 
         int percent = getPercent(viewModel.getValue1());
@@ -61,7 +64,7 @@ public class BarItemRecycleViewAdapter extends RecyclerView.Adapter<BarItemRecyc
         chanceViewParam(holder.linearValue1, viewModel.getColorBar1());
 
         if (viewModel.getValue2() != null && viewModel.getValue2() >= 0) {
-            holder.txtValue2.setText(Util.formatMoney(viewModel.getValue2()));
+            holder.txtValue2.setText(Util.formatMoney(viewModel.getValue2(), locale));
             chanceViewParam(holder.txtValue2, viewModel.getTextColorBar2());
 
             percent = getPercent(viewModel.getValue2());

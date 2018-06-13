@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HorizontalBarGraphSample.iml" filepath="$PROJECT_DIR$/HorizontalBarGraphSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HorizontalBarGraphSample.iml" filepath="$PROJECT_DIR$/HorizontalBarGraphSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/horizontalbargraph/horizontalbargraph.iml" filepath="$PROJECT_DIR$/horizontalbargraph/horizontalbargraph.iml" />
       <module fileurl="file://$PROJECT_DIR$/horizontalbargraph/horizontalbargraph.iml" filepath="$PROJECT_DIR$/horizontalbargraph/horizontalbargraph.iml" />
     </modules>
   </component>
