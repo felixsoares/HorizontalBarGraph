@@ -1,5 +1,5 @@
 [![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-HorizontalBarGraph-green.svg?style=flat )]( https://android-arsenal.com/details/1/6696 )
-[![Release]( https://img.shields.io/badge/Release-v1.0-blue.svg?style=flat )]( https://jitpack.io/#felixsoares/HorizontalBarGraph/ )
+[![Release]( https://img.shields.io/badge/Release-v1.1-blue.svg?style=flat )]( https://jitpack.io/#felixsoares/HorizontalBarGraph/ )
 
 # Horizontal Bar Graph
 
