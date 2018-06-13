@@ -1,5 +1,5 @@
 [![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-HorizontalBarGraph-green.svg?style=flat )]( https://android-arsenal.com/details/1/6696 )
-[![Release]( https://img.shields.io/badge/Release-v1.0-blue.svg?style=flat )]( https://jitpack.io/#felixsoares/HorizontalBarGraph/ )
+[![Release]( https://img.shields.io/badge/Release-v1.1-blue.svg?style=flat )]( https://jitpack.io/#felixsoares/HorizontalBarGraph/ )
 
 # Horizontal Bar Graph
 
@@ -24,7 +24,7 @@ Add the dependency in build.gradle (App module)
 
 ```gradle
 dependencies {
-	compile 'com.github.felixsoares:HorizontalBarGraph:1.0'
+	compile 'com.github.felixsoares:HorizontalBarGraph:1.1'
 }
 ```
 
@@ -106,6 +106,20 @@ or
 
 ```java
 horizontal.removeAll();
+```
+
+5) Change Locale
+
+```java
+HorizontalBar horizontal = findViewById(R.id.horizontal);
+horizontal.init(this).addAll(itens()).addOne(new BarItem("yyy", 1000d)).build(new Locale("es", "ES"));
+```
+
+or (device default)
+
+```java
+HorizontalBar horizontal = findViewById(R.id.horizontal);
+horizontal.init(this).addAll(itens()).addOne(new BarItem("yyy", 1000d)).build();
 ```
 
 <br/>
