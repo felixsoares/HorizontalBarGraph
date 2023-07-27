@@ -21,6 +21,8 @@ public class BarItem {
     private int textColorBar1;
     private int textColorBar2;
 
+    private int radius = 0;
+
     public BarItem(String description, Double value1, int colorBar1, int textColorBar1) {
         this.setDescription(description);
         this.setValue1(value1);
@@ -47,6 +49,17 @@ public class BarItem {
         this.setColorBar2(colorBar2);
         this.setTextColorBar1(textColorBar1);
         this.setTextColorBar2(textColorBar2);
+    }
+
+
+
+    public BarItem setRadius(int radius) {
+        this.radius = radius;
+        return this;
+    }
+
+    public int getRadius() {
+        return radius;
     }
 
     public void setDescription(String description) {
