@@ -25,12 +25,12 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                horizontal.add(new BarItem("xxx", 500d));
+                horizontal.add(new BarItem("xxx", 500d).setRadius(40));
 
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        horizontal.add(new BarItem("yyy", 1000d));
+                        horizontal.add(new BarItem("yyy", 1000d).setRadius(40));
                     }
                 }, 5000);
             }
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         List<BarItem> items = new ArrayList<>();
 
         int i = 0;
-        items.add(new BarItem("Teste " + i, 250d));
+        items.add(new BarItem("Teste " + i, 250d).setRadius(40));
         i++;
 
         items.add(new BarItem("Teste " + i, 800d, 550d));
